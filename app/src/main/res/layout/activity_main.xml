@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnHalt"
+        android:layout_width="250dp"
+        android:layout_height="156dp"
+        android:layout_marginBottom="64dp"
+        android:enabled="true"
+        android:onClick="onHalt"
+        android:text="Connect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#A51D1D" />
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="266dp"
+        android:layout_height="152dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnHalt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnResume"
+        android:layout_width="61dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"
+        android:onClick="onResume"
+        android:text="Resume"
+        app:layout_constraintBottom_toTopOf="@+id/txtMsg"
+        app:layout_constraintEnd_toEndOf="@+id/txtMsg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <EditText
+        android:id="@+id/edtIp"
+        android:layout_width="158dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="192.168.178.33"
+        app:layout_constraintBottom_toTopOf="@+id/txtMsg"
+        app:layout_constraintEnd_toStartOf="@+id/btnResume"
+        app:layout_constraintStart_toStartOf="@+id/txtMsg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
